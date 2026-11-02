@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student managment system</title>
+    <link rel="stylesheet" href="StudManagment.css">
+</head>
+<body>
+
+    <h1>Student Managment System</h1>
+    <!--Add student form-->
+    <form id="studentForm">
+
+        <input type="text" id="name" placeholder="Student Name"><br>
+
+        <input type="number" id="age" placeholder="Age"><br>
+
+        <input type="text" id="department" placeholder="Department"><br>
+
+        <input type="number" id="mark" placeholder="Mark">
+
+        <button type="submit">Add Student</button>
+    </form>
+    <hr>
+
+    <!--search-->
+    <div class="searchBox">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="search student..."
+        >
+
+        <button type="button" id="searchButton">
+            Search
+        </button>
+
+    </div>
+
+    <!--students appear-->
+    <div id="studentList"></div>
+<script src="StudManagment.js"></script>
+
+</body>
+</html>
+
+
+
+ 

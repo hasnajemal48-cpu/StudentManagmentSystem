@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #340285;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* Add Student Form */
+
+#studentForm {
+    max-width: 600px;
+    margin: auto;
+    background: rgb(122, 34, 255);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#studentForm input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #a2b5fc;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+#studentForm input:focus {
+    outline: none;
+    border-color: #555;
+}
+
+
+/* Buttons */
+
+button {
+    border: none;
+    border-radius: 7px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#studentForm button {
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+/* Search */
+
+.searchBox {
+    max-width: 600px;
+    margin: 25px auto;
+    display: flex;
+    gap: 10px;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #555;
+}
+
+#searchButton {
+    padding: 12px 20px;
+}
+
+
+/* Student List */
+
+#studentList {
+    max-width: 600px;
+    margin: auto;
+}
+
+
+/* Student Card */
+
+.student-card {
+    background: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Student Name */
+
+.student-card > button:first-child {
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Student Information */
+
+.student-info {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.student-info p {
+    margin: 8px 0;
+}
+
+
+/* Edit and Delete */
+
+.student-info button {
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .searchBox {
+        flex-direction: column;
+    }
+
+    #searchButton {
+        width: 100%;
+    }
+}
